@@ -1,0 +1,52 @@
+.equipments-state-content {
+  display: flex;
+  height: 100%;
+
+  overflow-y: auto;
+  flex-direction: column;
+  min-width: 100%;
+
+  .top {
+    height: 50px;
+    border: 1px solid #253255;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      width: 13px;
+      @media (max-width: 1536px) {
+        width: 10px;
+      }
+    }
+    @media (max-width: 1536px) {
+      height: 40px;
+    }
+
+    .title-text {
+      font-size: 20px;
+      margin-left: 40px;
+      color: #5e76ba;
+      font-family: "gothic 12";
+      @media (max-width: 1536px) {
+        font-size: 15px;
+        margin-left: 40px;
+      }
+    }
+    .icons-left {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+  }
+}

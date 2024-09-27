@@ -1,0 +1,226 @@
+.station-detail-content {
+  width: 100%;
+
+  overflow: auto;
+  padding: 10px 0;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #1c2641;
+  }
+
+  .title-station-info {
+    color: #fff;
+    margin: 10px 20px;
+    font-size: 19px;
+    font-family: "gothic 12";
+  }
+
+  .station-detail-content-header {
+    display: flex;
+    position: relative;
+    margin: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 700px) {
+      align-items: start;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .left {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+
+      @media (max-width: 700px) {
+        // flex-direction: column;
+      }
+
+      .icon-circle-background {
+        background-color: #1c2641;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 50px;
+        border-radius: 100%;
+
+        .tooltip {
+          position: absolute;
+          text-align: center;
+          font-size: 12px;
+          background-color: #1c2641;
+          width: 80px;
+          z-index: 10;
+          border-radius: 10px;
+          padding: 3px 0;
+          font-family: "gothic 12";
+          color: #8faadc;
+          top: 40px;
+        }
+        img {
+          width: 30px;
+        }
+      }
+      .station-detail-name {
+        color: #8da7d9;
+        font-size: 25px;
+        font-family: "gothic 12";
+      }
+      .station-business-name {
+        height: 20px;
+        display: flex;
+        gap: 10px;
+        font-family: "gothic 12";
+        color: #8da7d9;
+        font-size: 15px;
+
+        .vertical-line {
+          border-left: 1px solid #8da7d9; /* Цвет и толщина линии */
+          height: 20px; /* Высота линии */
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 15px;
+      margin-right: 150px;
+      align-items: center;
+
+      .icon-circle-background {
+        background-color: #1c2641;
+        width: 35px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        height: 35px;
+        border-radius: 100%;
+
+        .tooltip {
+          position: absolute;
+          text-align: center;
+          font-size: 12px;
+          background-color: #1c2641;
+          width: 80px;
+          z-index: 10;
+          border-radius: 10px;
+          padding: 3px 0;
+          font-family: "gothic 12";
+          color: #8faadc;
+          top: 40px;
+        }
+      }
+    }
+    .detail-img-station {
+      position: absolute;
+      bottom: -45px;
+      right: 10px;
+
+      @media (max-width: 1536px) {
+        width: 5%;
+      }
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+
+  .station-detail-content-info {
+    background-color: #1c2641;
+    border: 1px solid #2b3a63;
+
+    margin: 20px;
+    .station-detail-navbar {
+      display: flex;
+      .navbar-item {
+        width: 11%;
+        display: flex;
+        padding: 10px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        color: #5e76ba;
+        border-right: 1px solid #2b3a63;
+        border-bottom: 1px solid #2b3a63;
+
+        @media (max-width: 1536px) {
+          width: 30%;
+          gap: 1px;
+        }
+
+        &.default {
+          width: 20%;
+          border-right: none;
+          border-bottom: 1px solid #2b3a63;
+        }
+
+        &.default-equpmnt {
+          width: 50%;
+          border-right: none;
+          border-bottom: 1px solid #2b3a63;
+        }
+        &.default-materials {
+          width: 80%;
+          border-right: none;
+          border-bottom: 1px solid #2b3a63;
+        }
+        &.default-edit-user {
+          width: 65%;
+          border-right: none;
+          border-bottom: 1px solid #2b3a63;
+        }
+
+        &.active {
+          color: white;
+          border-bottom: none;
+          border-top: 2px solid #8da7d9;
+        }
+
+        .left-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          font-size: 15px;
+          @media (max-width: 1200px) {
+            gap: 1px;
+          }
+          .text-title {
+            font-family: "gothic 12";
+            @media (max-width: 1200px) {
+              display: none;
+            }
+          }
+          .info-nav-item {
+            font-family: "gothic 12";
+            @media (max-width: 1200px) {
+              display: none;
+            }
+          }
+        }
+
+        .item-quantity {
+          font-size: 16px;
+          @media (max-width: 700px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .station-detail-equipments {
+      @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.state-content {
+    display: flex;
+    height: 100%;
+    background-color: #1c2641;
+    position: relative;
+    flex-direction: column;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 13px;  
+        @media (max-width: 1536px) {
+            width: 10px;
+          }
+    }
+
+    .top {
+        height: 50px;
+        border: 1px solid #253255;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+
+        
+    @media (max-width: 1536px) {
+        height: 40px;
+      }
+
+        .title-text {
+            font-size: 20px;
+            margin-left:40px;
+            color: #5e76ba;
+            font-family: "gothic 12";
+            @media (max-width: 1536px) {
+                font-size: 15px;
+              }
+          }
+    }
+    
+    .bottom{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+}

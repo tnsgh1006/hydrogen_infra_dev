@@ -1,0 +1,52 @@
+.cctv-situation-content {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  overflow-y: auto;
+  display: flex;
+
+  .cctv-sitauation-inner {
+    display: flex;
+    padding: 0 10px;
+    width: 100%;
+
+    .cctv-item {
+      border-bottom: 1px solid #253255;
+      background-color: #212c4b;
+      margin: 0.8%;
+      width: 18.2%;;
+      display: flex;
+      height: 150px;
+      flex-direction: column;
+      @media (max-width: 1536px) {
+        height: 120px;
+      }
+
+      .top {
+        border: 1px solid #253255;
+        display: flex;
+        flex: 3;
+        align-items: center;
+        justify-content: center;
+
+        .img-icon {
+          // width: 80%;
+          // height: 100%;
+
+          &.default {
+            width: 30%;
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        color: #8faadc;
+        font-family: "gothic 12";
+      }
+    }
+  }
+}
