@@ -48,9 +48,9 @@ function Map() {
     if (savedMarkers) {
       setMarkers(savedMarkers);
     }
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then((response) => response.json())
-      .then((json) => console.log(json));
+    fetch("https://jsonplaceholder.typicode.com/todos").then((response) =>
+      response.json()
+    );
   }, []);
 
   useEffect(() => {

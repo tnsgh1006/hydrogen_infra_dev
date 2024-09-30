@@ -172,7 +172,6 @@ export default function App() {
     // GET 요청을 사용하여 사용자 데이터를 가져옴
     fetch("http://localhost:3001/users")
       .then((response) => response.json())
-      .then((json) => console.log("testdata", json))
       .then((data) => setUsers(data))
       .catch((error) => console.error("Error fetching users:", error));
   }, []);
